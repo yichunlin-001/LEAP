@@ -1,0 +1,11 @@
+Note for deployment:
+
+- This environment includes GPU-accelerated packages such as `torch`, `cupy`, and `tigre`.
+- CUDA version on the simulation computer must be confirmed prior to final installation.
+- Recommended installation commands for GPU packages:
+
+    pip install cupy-cuda117         # or 118, based on driver
+    pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+    pip install git+https://github.com/CERN/TIGRE.git   # or install via conda if CUDA matches
+
+- GUI packages like `napari`, `PyQt5`, `pyopengl` require a display environment or X11 forwarding.
