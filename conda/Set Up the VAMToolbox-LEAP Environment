@@ -1,7 +1,7 @@
 1. Install all core dependencies except GPU-specific packages
 
-conda env create -f vamenv.yaml
-conda activate vamtoolbox
+conda env create -f vamtoolbox-gpu.yml
+conda activate vamtoolbox-gpu
 
 2. Check the CUDA driver version of the system
 
